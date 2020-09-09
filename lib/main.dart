@@ -5,8 +5,9 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-  var calculator= Calculator();
-  runApp(MyApp());
+  print("vamos a esperar 5 segundos antes de mostrar la pantalla");
+  Future.delayed(Duration(seconds: 5), () => runApp(MyApp()));
+
 }
 
 class MyApp extends StatelessWidget {
